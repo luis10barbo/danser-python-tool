@@ -16,7 +16,6 @@ Set skin of replay:
   Opens a menu to select the skin of the replay
 ```
 replay_object.set_skin()
-
 ```
 
 Set path of replay:
