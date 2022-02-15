@@ -14,17 +14,17 @@ class replay():
         self.settings = ""
         self.start_time = ""
         
-        cfg = config_file()
+        self.cfg = config_file()
         
     def set_skin(self):
         # Validate Path
-        validation_result, err = cfg.validate_osu_path()
+        validation_result, err = self.cfg.validate_osu_path()
         if validation_result == False:
             print(err)
             exit()
         
         # Get skins
-        skins_path = os.path.join(cfg.config_file["OsuPath"], "Skins")
+        skins_path = os.path.join(self.cfg.config_file["OsuPath"], "Skins")
         skins = os.listdir(skins_path)
         
         # Select Skin
@@ -41,13 +41,13 @@ class replay():
 
     def set_settings(self):
         # Validate Path
-        validation_result, err = cfg.validate_danser_path()
+        validation_result, err = self.cfg.validate_danser_path()
         if validation_result == False:
             print(err)
             exit()
             
         # Get settings files
-        settings_path = os.path.join(cfg.config_file["DanserPath"], "settings")
+        settings_path = os.path.join(self.cfg.config_file["DanserPath"], "settings")
         settings = os.listdir(settings_path)
         
         # Remove "".json" from settings
@@ -99,7 +99,7 @@ class replay():
         print(recording_arguments)
 
         # Create bat file
-        danser_path = cfg.config_file["DanserPath"]
+        danser_path = self.cfg.config_file["DanserPath"]
         executable_path = os.path.join(danser_path, "record_replay.bat")
         print("danser", danser_path, type(danser_path))
         print("executable", executable_path)
