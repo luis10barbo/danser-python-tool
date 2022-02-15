@@ -47,11 +47,17 @@ def run():
             # Get settings files
             settings_path = os.path.join(cfg.config_file["DanserPath"], "settings")
             settings = os.listdir(settings_path)
+            
+            # Remove "".json" from settings
+            for i in range(len(settings)):
+                settings[i] = settings[i].replace(".json", "")
+                
+
             settings.remove("api.txt")
             
             # Select settings file
             selected_settings = self.selection_menu(settings, menu_title="setting", search="")
-            self.settings = selected_settings.replace(".json", "")
+            self.settings = selected_settings
             return self.settings
             
         def set_start_time(self):
@@ -76,7 +82,7 @@ def run():
             menu_entries.insert(0, search_button)
             
             # Open select menu
-            selected_entry, _ = pick(title="Select a " + menu_title , options=menu_entries)
+            selected_entry, _ = pick(title="Select a " + menu_title , options=menu_entries, indicator=">> ", default_index=1)
             # Selected entry is search
             if selected_entry == search_button:
                 response = input("Search for " + menu_title + " : ")
