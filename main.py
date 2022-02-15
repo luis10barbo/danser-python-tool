@@ -150,34 +150,5 @@ class config_file():
             self.config_file = yaml.safe_load(file.read().replace("\\", "\\\\"))
             return self.config_file
 
-def record_replay():
-    replay_skin = replay_object.skin
-    replay_path = replay_object.path
-    replay_config = replay_object.config
-    execution_arguments = None
 
 
-# Get os path Separator
-os_sep = os.path.sep
-
-cfg = config_file()
-
-# Create Replay Object
-replay_object = replay()
-replay_object.set_skin()
-replay_object.set_settings()
-replay_object.set_replay_path()
-# replay_object.set_start_time()
-
-print(replay_object.skin)
-print(replay_object.settings)
-print(replay_object.replay_path)
-print(replay_object.start_time)
-
-replay_object.record_replay()
-    
-    
-
-
-
-run()
