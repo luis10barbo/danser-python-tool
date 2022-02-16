@@ -1,0 +1,31 @@
+2022-02-16 08:23:08,648 DEBUG    New replay added to dict
+2022-02-16 08:23:08,648 DEBUG    Replay Dict > {3: <__main__.replay object at 0x0000021EF14626B0>}
+2022-02-16 08:23:09,084 DEBUG    New replay added to dict
+2022-02-16 08:23:09,085 DEBUG    Replay Dict > {3: <__main__.replay object at 0x0000021EF14626B0>, 4: <__main__.replay object at 0x0000021EF14A4DC0>}
+2022-02-16 08:23:10,024 DEBUG    [('', '', ''), ('', '', '')]
+2022-02-16 08:23:11,344 DEBUG    Replay deleted from dict
+2022-02-16 08:23:11,344 DEBUG    Replay Dict > {3: <__main__.replay object at 0x0000021EF14626B0>, 4: <__main__.replay object at 0x0000021EF14A4DC0>}
+2022-02-16 08:23:12,036 DEBUG    entry number > 1
+2022-02-16 08:23:12,036 DEBUG    exit number > 5
+2022-02-16 08:23:13,046 INFO     Sucess! : Skin set
+2022-02-16 08:23:22,542 DEBUG    entry number > 5
+2022-02-16 08:23:22,542 DEBUG    exit number > 5
+2022-02-16 08:23:23,800 DEBUG    [('! SPAZZAPENGUIN17+PUNPUN (ORANGE)', '', ''), ('', '', '')]
+2022-02-16 08:23:24,925 DEBUG    Replay deleted from dict
+2022-02-16 08:23:24,925 DEBUG    Replay Dict > {3: <__main__.replay object at 0x0000021EF14626B0>, 4: <__main__.replay object at 0x0000021EF14A4DC0>}
+2022-02-16 08:23:25,614 DEBUG    entry number > 1
+2022-02-16 08:23:25,614 DEBUG    exit number > 5
+2022-02-16 08:23:29,085 INFO     Sucess! : Skin set
+2022-02-16 08:23:30,027 DEBUG    entry number > 2
+2022-02-16 08:23:30,027 DEBUG    exit number > 5
+2022-02-16 08:23:31,096 INFO     Sucess! : Replay set to C:\\Users\\luis10barbo\\Documents\\projetos\\danser-python-tool\\queue\walk this way.osr
+2022-02-16 08:23:31,980 DEBUG    entry number > 3
+2022-02-16 08:23:31,980 DEBUG    exit number > 5
+2022-02-16 08:23:33,986 INFO     Sucess! : Settings set
+2022-02-16 08:23:35,809 DEBUG    entry number > 5
+2022-02-16 08:23:35,809 DEBUG    exit number > 5
+2022-02-16 08:23:37,637 ERROR    Skin, path and settings should be set to record replay!
+2022-02-16 08:23:37,637 DEBUG    Recording arguments > danser.exe -skip -replay="C:\\Users\\luis10barbo\\Documents\\projetos\\danser-python-tool\\queue\walk this way.osr" -skin="CK Bacon boi 1.0 Rektygon" -settings="teste2lb" -record -out="" 
+2022-02-16 08:23:37,637 DEBUG    Danser Path > G:\\videos\\danser<class 'str'>
+2022-02-16 08:23:37,637 DEBUG    Executable Path > G:\\videos\\danser\record_replay.bat
+2022-02-16 08:25:42,784 DEBUG    Replay Recorded
